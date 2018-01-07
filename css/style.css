@@ -1,8 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
+html,
+body,
+* {
+  margin: 0px;
+  padding: 0px;
+  transition: background-color 1s ease;
+}
 
 body {
-  padding: 5em 0 3em;
-  background-color: #00C199;
-  text-align: center;
-  font-family: 'Work Sans', sans-serif;
   color: white;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1bb996;
+}
+
+/* Navigation */
+navigation {
+  width: 100%;
+  position: fixed;
+}
+
+navigation ul {
+  list-style-type: none;
+  margin: 0;
+  float: left;
+  padding: 1em 0 0 0;
+}
+
+navigation li {
+  display: inline;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+
+section {
+  text-align: center;
+  padding: 5em 0 3em;
+  background-color: #1bb996;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+.panel a {
+  color:#1BB996;
+}
+
+.panel a:hover {
+  color:#006891;
+}
+
+/* Registration button */
+.button {
+  max-width: 200px;
+  border: solid 2px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 2px;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.button > a,
+.button > a:hover {
+  color:white;
+}
+
+/* Panel styles  */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  text-align: left;
+  padding: 10em 20em 3em 20em;
+}
+
+.panel2 { /* Cover photo */
+  background-image: url('../images/flawless-cover.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20em 0 3em;
+}
+
+.panel2 a:hover {
+  color: #006891;
+}
+
+.homepage-sections-title {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Paragraphs */
+.paragraph {
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+.header {
+  font-size: 2.2em;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.bauta {
+  font-size: 2.2em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.white {
+  color: #fff;
+}
+.large {
+  color: black;
+  background-color: #ffff00;
+  font-size: 2em;
+  font-weight: 600;
+  padding: .5em;
+}
+.mega {
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* COLORS */
+
+.color-main {
+  background-color: #1BB996;
+}
+
+.color-teal {
+  background-color: #1BB996;
+}
+
+.color-blue {
+  background-color: #006891;
+}
+
+.color-red {
+  background-color: #D85465;
+}
+
+.color-black {
+  background-color: #3C4240;
+}
+
+.color-orange {
+  background-color: #F19031;
+}
+
+/* MAIN */
+
+.crown, .praise, .ring {
+  visibility: hidden;
+}
+
+/* Schedule */
+.schedule-mobile { display:none;}
+.schedule {
+  max-width:600px;
+  margin: 0 auto;
+  display:flex;
+  justify-content:center;
+  line-height:2.3em;
+}
+.time {
+  display:inline-block;
+  margin: 0 auto;
+  margin-right:20px;
+  text-align:right;
+  float:center;
+}
+.event {
+  display:inline-block;
+  margin-right: 0;
+  text-align:left;
+  float:center;
+}
+
+/* SPONSORS */
+
+.sponsorsection {
+  margin: 0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor{
+  display:flex;
+  margin: 20px;
+  background-color: transparent;
+  /* border: 2px solid white; */
+  border-radius: 3px;
+  -webkit-filter: brightness(0) invert(1);
+}
+
+.sponsor:hover{
+  -webkit-filter: none;
+  /* background-color: white; */
+}
+
+.sponsor img {
+  max-width:100%;
+  max-height:100%;
+  margin: auto;
+}
+
+.platinum {
+  width: 280px;
+  height:100px;
+}
+
+.gold {
+  width: 210px;
+  height:60px;
+}
+
+.silver {
+  width: 150px;
+  height:40px;
+}
+
+/* FAQ */
+
+#faq h3 {
+  text-transform: uppercase;
+}
+#faq a:hover {
+  color:#D85465;
+}
+
+/* DAYOF */
+.keynote {
+  max-width:1000px;
+  margin: 0 auto;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  vertical-align: center;
+  flex-wrap: wrap;
+}
+.keynote-card {
+  margin: 10px;
+  max-width: 400px;
+}
+.keynote-photo {
+  -webkit-filter: grayscale(1) brightness(1.2);
+  height:220px;
+}
+.keynote-photo:hover {
+  -webkit-filter: none;
+}
+.keynote-text {
+  max-width: 600px;
+  padding-left: 30px;
+  text-align:left;
+}
+.keynote-text p {
+  font-size:1.3em;
+  font-style: italic;
+  margin-bottom:10px;
+}
+.workshop {
+  margin: 20px;
+}
+.workshop h3 {
+  display:inline-block;
+}
+.workshop h4 {
+  font-weight: normal;
+  font-style: italic;
+}
+.workshop p {
+  margin: 0 auto;
+  padding: 10px 0px;
+  max-width: 600px;
+  font-size:.9em;
+}
+.tag {
+  display:inline-block;
+  text-transform: uppercase;
+  font-size:.7em;
+  margin-left: 5px;
+  padding:4px 6px 1px;
+}
+.beginner {
+  background-color: #006891;
+}
+.optional {
+  background-color: #1bb996;
+  margin-left:0px;
+  margin-right:10px;
+  padding: 6px 6px 2px;
+  line-height: 16px;
+}
+.advanced {
+  background-color: #D85465;
+}
+.workshop > .crown > img{
+  height:40px;
+  padding: 20px;
+}
+.mentor-grid {
+  max-width:1000px;
+  margin: 0 auto;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.mentor-card{
+  margin: 10px;
+  max-width: 200px;
+}
+.mentor-card > p {
+  font-style: italic;
+}
+.mentor-photo {
+  -webkit-filter: grayscale(1) brightness(1.2);
+  height:140px;
+}
+.mentor-photo:hover {
+  -webkit-filter: none;
+}
+
+
+/* FOOTER */
+
+.bottom {
+  position:relative;
+  background-image: url('https://raw.githubusercontent.com/flawlesshacks/2017/master/assets/images/background-btm.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  text-align: left;
+  padding: 5em 0 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.8em;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 530px) {
+  /* This is how it looks on mobile */
+  navigation {
+    display: none;
+  }
+  .schedule {
+    display:none;
+  }
+  .schedule-mobile {
+    display:block;
+  }
+  .panel {
+    min-height: 100vh;
+    text-align: center;
+    padding: 2em 0 2em;
+  }
 }
