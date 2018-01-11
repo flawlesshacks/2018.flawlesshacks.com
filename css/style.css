@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Andika');
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('http://weloveiconfonts.com/api/?family=entypo');
@@ -38,6 +37,16 @@ navigation li {
 }
 
 
+/* Cover photo */
+.hero { 
+  background-image: url('../images/flawless-cover-bw.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 90vh;
+  text-align: right;
+  padding:8em 2em 4em;
+}
+
 section {
   text-align: center;
   padding: 5em 0 3em;
@@ -59,6 +68,7 @@ a {
   color:white;
 }
 
+/* Header styles */
 h1 {
   font-size:1.4em;
   margin-bottom:1.2em;
@@ -82,6 +92,14 @@ h3 {
   width:45%;
   min-width:300px;
 }
+
+/* Panel styles  */
+.panel {
+  padding:5em 5em;
+}
+
+/* ABOUT */
+
 #about {
   background-color:#363636;
 }
@@ -111,6 +129,9 @@ h3 {
 .button > a:hover {
   color:white;
 }
+
+/* FAQ */
+
 #faq {
   background-color:#DCDCDC;
   color: #363636;
@@ -128,35 +149,6 @@ h3 {
 }
 #faq a:hover {
   color:#D85465;
-}
-
-/* Panel styles  */
-.panel {
-  padding:5em 5em;
-}
-
-.hero { /* Cover photo */
-  background-image: url('../images/flawless-cover-bw.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 90vh;
-  text-align: right;
-  padding:8em 2em 4em;
-}
-
-
-.homepage-sections-title {
-  position: relative;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* COLORS */
@@ -189,6 +181,7 @@ h3 {
 }
 
 /* Schedule */
+
 .schedule-mobile { display:none;}
 .schedule {
   max-width:600px;
@@ -212,6 +205,7 @@ h3 {
 }
 
 /* SPONSORS */
+
 #sponsors {
   background-color: #2E7AD4;
 }
@@ -378,7 +372,6 @@ h3 {
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
-
 
 /* MOBILE */
 
