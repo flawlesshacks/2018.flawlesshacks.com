@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Andika');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('http://weloveiconfonts.com/api/?family=entypo');
 
 html,
@@ -11,7 +13,7 @@ body,
 
 body {
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Andika', sans-serif;
   background-color: #1bb996;
 }
 
@@ -50,50 +52,98 @@ a {
 }
 
 .panel a {
-  color:#1BB996;
+  color:#2E7AD4;
 }
 
 .panel a:hover {
-  color:#006891;
+  color:white;
 }
 
+h1 {
+  font-size:1.4em;
+  margin-bottom:1.2em;
+}
+h2 {
+  font-size:1.2em;
+}
+h3 {
+  font-family:'Merriweather', serif;
+}
+
+.flex-container {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between; 
+  align-items:center;
+}
+.flex-item {
+  display:flex;
+  flex-wrap: wrap;
+  width:45%;
+  min-width:300px;
+}
+#about {
+  background-color:#363636;
+}
+#about  .flex-item.left li {
+  list-style: none;
+}
+#about  .flex-item.right {
+  width:200px;
+  margin-right:0;
+}
 /* Registration button */
 .button {
   max-width: 200px;
+  margin:1em 0em;
   border: solid 2px;
   padding: 5px 10px 5px 10px;
   border-radius: 2px;
+  text-transform: uppercase;
+  font-size:1.3em;
 }
 
 .button:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .button > a,
 .button > a:hover {
   color:white;
 }
+#faq {
+  background-color:#DCDCDC;
+  color: #363636;
+}
+#faq h3 {
+    font-size:1em;
+    text-transform: none;
+}
+#faq p {
+  font-size:.85em;
+  margin-bottom: 1em;
+}
+#faq a {
+  font-weight: bold;
+}
+#faq a:hover {
+  color:#D85465;
+}
 
 /* Panel styles  */
 .panel {
-  /* min height incase content is higher than window height */
-  min-height: 100vh;
-  text-align: left;
-  padding: 10em 20em 3em 20em;
+  padding:5em 5em;
 }
 
-.panel2 { /* Cover photo */
-  background-image: url('../images/flawless-cover.jpg');
-  background-size: contain;
+.hero { /* Cover photo */
+  background-image: url('../images/flawless-cover-bw.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  text-align: center;
-  padding: 20em 0 3em;
+  max-height: 90vh;
+  text-align: right;
+  padding:8em 2em 4em;
 }
 
-.panel2 a:hover {
-  color: #006891;
-}
 
 .homepage-sections-title {
   position: relative;
@@ -109,39 +159,6 @@ a {
   margin-right: auto;
 }
 
-/* Paragraphs */
-.paragraph {
-  margin: 0 auto;
-  line-height: 30px;
-}
-
-.header {
-  font-size: 2.2em;
-  font-weight: 600;
-  margin: 0 auto;
-  max-width: 600px;
-}
-.bauta {
-  font-size: 2.2em;
-  font-weight: 600;
-  line-height: 1.2;
-}
-.white {
-  color: #fff;
-}
-.large {
-  color: black;
-  background-color: #ffff00;
-  font-size: 2em;
-  font-weight: 600;
-  padding: .5em;
-}
-.mega {
-  font-size: 2.5em;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
 /* COLORS */
 
 .color-main {
@@ -152,6 +169,9 @@ a {
   background-color: #1BB996;
 }
 
+.color-gray {
+  background-color: #363636;
+}
 .color-blue {
   background-color: #006891;
 }
@@ -166,12 +186,6 @@ a {
 
 .color-orange {
   background-color: #F19031;
-}
-
-/* MAIN */
-
-.crown, .praise, .ring {
-  visibility: hidden;
 }
 
 /* Schedule */
@@ -198,7 +212,12 @@ a {
 }
 
 /* SPONSORS */
-
+#sponsors {
+  background-color: #2E7AD4;
+}
+#sponsors a {
+  color: #363636;
+}
 .sponsorsection {
   margin: 0 auto;
   display:flex;
@@ -239,15 +258,6 @@ a {
 .silver {
   width: 150px;
   height:40px;
-}
-
-/* FAQ */
-
-#faq h3 {
-  text-transform: uppercase;
-}
-#faq a:hover {
-  color:#D85465;
 }
 
 /* DAYOF */
@@ -349,18 +359,24 @@ a {
 
 .bottom {
   position:relative;
-  background-image: url('https://raw.githubusercontent.com/flawlesshacks/2017/master/assets/images/background-btm.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 40vh;
+  background-color: #2E7AD4;
   text-align: left;
-  padding: 5em 0 0;
+  padding: 5em 2em 1em;
 }
 
 .footer {
   position: absolute;
   bottom: 10px;
-  font-size: 0.8em;
+}
+.footer a {
+  font-size:1.2em;
+  margin-right:.5em;
+}
+.footer a:hover {
+  color:#D85465;
+}
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
 }
 
 
@@ -379,7 +395,6 @@ a {
   }
   .panel {
     min-height: 100vh;
-    text-align: center;
-    padding: 2em 0 2em;
+    padding: 2em;
   }
 }
