@@ -60,14 +60,19 @@ a {
   display: inline-block;
 }
 
-.panel a {
+#faq a {
   color:#2E7AD4;
 }
 
-.panel a:hover {
+#faq a:hover {
   color:white;
 }
-
+#about a {
+  color:white;
+}
+#about .left a:hover {
+  color:#2E7AD4;
+}
 /* Header styles */
 h1 {
   font-size:1.4em;
@@ -127,7 +132,7 @@ h3 {
 
 .button > a,
 .button > a:hover {
-  color:white;
+  color:white !important;
 }
 
 /* FAQ */
@@ -204,13 +209,31 @@ h3 {
   float:center;
 }
 
+/* Summary */
+#summary {
+  background-color: #2E7AD4;
+}
+.content h3 {
+  font-size:1.4em;
+  line-height: 1.5em;
+
+}
+.content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.img-line {
+  display:flex;
+  flex-wrap:wrap;
+}
+
 /* SPONSORS */
 
 #sponsors {
-  background-color: #2E7AD4;
+  background-color: #363636;
 }
 #sponsors a {
-  color: #363636;
+  color: #2E7AD4;
 }
 .sponsorsection {
   margin: 0 auto;
@@ -353,7 +376,7 @@ h3 {
 
 .bottom {
   position:relative;
-  background-color: #2E7AD4;
+  background-color: #363636;
   text-align: left;
   padding: 5em 2em 1em;
 }
@@ -374,7 +397,11 @@ h3 {
 }
 
 /* MOBILE */
-
+@media (max-width:780px) {
+  .img-line {
+    display:none;
+  }
+}
 @media (max-width: 530px) {
   /* This is how it looks on mobile */
   navigation {
@@ -390,4 +417,5 @@ h3 {
     min-height: 100vh;
     padding: 2em;
   }
+
 }
