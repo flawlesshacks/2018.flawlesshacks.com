@@ -38,7 +38,7 @@ navigation li {
 
 
 /* Cover photo */
-.hero { 
+.hero {
   background-image: url('../images/flawless-cover-bw.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,6 +73,19 @@ a {
 #about .left a:hover {
   color:#2E7AD4;
 }
+
+/** Code of conduct */
+.conduct {
+ font-size: 20px;
+}
+.conduct a {
+  color: #FFBE00;
+}
+
+.conduct a:hover {
+ color: #403E8E;
+}
+
 /* Header styles */
 h1 {
   font-size:1.4em;
@@ -88,7 +101,7 @@ h3 {
 .flex-container {
   display:flex;
   flex-wrap:wrap;
-  justify-content:space-between; 
+  justify-content:space-between;
   align-items:center;
 }
 .flex-item {
