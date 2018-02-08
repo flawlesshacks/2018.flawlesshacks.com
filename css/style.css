@@ -47,6 +47,35 @@ navigation li {
   padding:8em 2em 4em;
 }
 
+
+/* ABOUT */
+.hero h1 {
+  font-size:1.7em;
+  margin-bottom:0;
+  font-weight:bold;
+  text-shadow: 2px 2px 3px #000;
+}
+.hero.flex-container {
+  margin:0 auto;
+  justify-content:space-around;
+}
+.hero a {
+  color:white;
+}
+.hero a:hover {
+  color:#FFBE00;
+}
+.hero .flex-item.left .flex-item.right{
+  align-self:center;
+}
+.hero .flex-item li {
+  list-style: none;
+}
+.hero .flex-item .center {
+  margin:0 auto;
+}
+
+
 section {
   text-align: center;
   padding: 5em 0 3em;
@@ -66,12 +95,6 @@ a {
 
 #faq a:hover {
   color:white;
-}
-#about a {
-  color:white;
-}
-#about .left a:hover {
-  color:#2E7AD4;
 }
 
 /** Code of conduct */
@@ -106,6 +129,7 @@ h3 {
 }
 .flex-item {
   display:flex;
+  text-align:left;
   flex-wrap: wrap;
   width:45%;
   min-width:300px;
@@ -116,18 +140,6 @@ h3 {
   padding:5em 5em;
 }
 
-/* ABOUT */
-
-#about {
-  background-color:#363636;
-}
-#about  .flex-item.left li {
-  list-style: none;
-}
-#about  .flex-item.right {
-  width:200px;
-  margin-right:0;
-}
 /* Registration button */
 .button {
   max-width: 200px;
@@ -223,7 +235,7 @@ h3 {
 }
 
 /* Summary */
-#summary {
+#about {
   background-color: #2E7AD4;
 }
 .content h3 {
@@ -281,12 +293,11 @@ h3 {
 }
 
 .gold {
-  width: 210px;
-  height:60px;
+  width:250px;
+  height:70px;
 }
 
 .silver {
-  width: 150px;
   height:40px;
 }
 
@@ -415,7 +426,29 @@ h3 {
     display:none;
   }
 }
+@media (max-width: 750px) {
+  /* Cover photo on small browser or mobile */
+  .hero {
+    max-height:100%;
+    text-align: center;
+    padding:5em 2em;
+  }
+
+  .hero h1 {
+    font-size:1.4em;
+  }
+  .hero  > .flex-container {
+    margin:0 auto;
+    justify-content:center;
+  }
+  .flex-item.right {
+    margin-top: 3em;
+  }
+
+}
+
 @media (max-width: 530px) {
+
   /* This is how it looks on mobile */
   navigation {
     display: none;
