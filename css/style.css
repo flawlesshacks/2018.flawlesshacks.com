@@ -441,7 +441,7 @@ h3 {
     margin:0 auto;
     justify-content:center;
   }
-  .flex-item.right {
+  .flex-item.right .center {
     margin-top: 3em;
   }
 
@@ -460,8 +460,7 @@ h3 {
     display:block;
   }
   .panel {
-    min-height: 100vh;
-    padding: 2em;
+    padding: 5em 2em;
   }
 
 }
