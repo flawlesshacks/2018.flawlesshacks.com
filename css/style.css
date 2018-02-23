@@ -159,6 +159,31 @@ h3 {
 .button > a:hover {
   color:white !important;
 }
+/* WORKSHOPS */
+
+#workshops {
+  background-color:#FFBE00;
+  color: #363636;
+}
+.workshop {
+  display:flex;
+}
+.workshop .content {
+  margin: 20px;
+}
+.workshop h3 i {
+  font-size:.7em;
+}
+.workshop p {
+  margin: 0 auto;
+  padding: 10px 0px;
+  max-width: 700px;
+  font-size:.9em;
+}
+.workshop .photo > img{
+  height:200px;
+  padding: 20px;
+}
 
 /* FAQ */
 
@@ -332,46 +357,24 @@ h3 {
   font-style: italic;
   margin-bottom:10px;
 }
-.workshop {
-  margin: 20px;
-}
-.workshop h3 {
-  display:inline-block;
-}
-.workshop h4 {
-  font-weight: normal;
-  font-style: italic;
-}
-.workshop p {
-  margin: 0 auto;
-  padding: 10px 0px;
-  max-width: 600px;
-  font-size:.9em;
-}
+
 .tag {
   display:inline-block;
   text-transform: uppercase;
   font-size:.7em;
-  margin-left: 5px;
-  padding:4px 6px 1px;
+  margin-bottom:5px;
+  padding:2px 10px;
+  color:white;
+  font-style: bold;
+  letter-spacing: 1px;
 }
 .beginner {
-  background-color: #006891;
-}
-.optional {
-  background-color: #1bb996;
-  margin-left:0px;
-  margin-right:10px;
-  padding: 6px 6px 2px;
-  line-height: 16px;
+  background-color: #2E7AD4;
 }
 .advanced {
   background-color: #D85465;
 }
-.workshop > .crown > img{
-  height:40px;
-  padding: 20px;
-}
+
 .mentor-grid {
   max-width:1000px;
   margin: 0 auto;
