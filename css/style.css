@@ -165,6 +165,9 @@ h3 {
   background-color:#FFBE00;
   color: #363636;
 }
+#workshops h1 {
+  display:inline-block;
+}
 .workshop {
   display:flex;
 }
@@ -176,7 +179,6 @@ h3 {
 }
 .workshop p {
   margin: 0 auto;
-  padding: 10px 0px;
   max-width: 700px;
   font-size:.9em;
 }
@@ -374,9 +376,6 @@ h3 {
 .advanced {
   background-color: #D85465;
 }
-#workshops h1 {
-  display:inline-block;
-}
 .soon {
   margin-left:10px;
   color:black;
@@ -479,6 +478,9 @@ h3 {
   .panel {
     padding: 5em 2em;
   }
-
+  #workshops h1 {
+    margin-bottom:0;
+  }
+}
 
 }
