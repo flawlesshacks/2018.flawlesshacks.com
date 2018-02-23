@@ -447,7 +447,14 @@ h3 {
   .flex-item.right .center {
     margin-top: 3em;
   }
-
+  .workshop {
+    flex-wrap:wrap;
+    align-content: center;
+  }
+  .workshop .photo > img {
+    margin:0 auto;
+    padding:20px 10px 0px;
+  }
 }
 
 @media (max-width: 530px) {
@@ -465,5 +472,6 @@ h3 {
   .panel {
     padding: 5em 2em;
   }
+
 
 }
