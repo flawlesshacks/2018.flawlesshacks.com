@@ -187,6 +187,63 @@ h3 {
   padding: 20px;
 }
 
+/* SPEAKERS */
+
+#keynote {
+  background-color: #2E7AD4;
+  color: white;
+}
+
+#keynote .flex-container {
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.speaker {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width:50%;
+  min-width:400px;
+}
+.speaker .content {
+  margin: 20px;
+}
+.speaker h1 {
+  font-family:'Merriweather', serif;
+  margin-bottom: 16px;
+}
+.speaker .content h3  {
+  font-family:'Andika', sans-serif;
+  display:inline-block;
+  text-transform: uppercase;
+  font-size:1em;
+  font-weight:bold;
+  letter-spacing: 1px;
+  color:#363636;
+  background-color:#FFBE00;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.speaker .content h3 span {
+  padding:1px 10px;
+  background-color:#FFBE00;
+}
+.speaker p {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size:.9em;
+}
+.speaker .photo > img{
+  height:250px;
+  padding: 10px;
+}
+.speaker a {
+  color:white;
+}
+.speaker a:hover {
+  color:#363636;
+}
+
 /* FAQ */
 
 #faq {
@@ -238,14 +295,20 @@ h3 {
 }
 
 /* Schedule */
-
+#schedule {
+  background-color: #363636;
+  padding-bottom:30px;
+}
 .schedule-mobile { display:none;}
 .schedule {
   max-width:600px;
   margin: 0 auto;
   display:flex;
   justify-content:center;
-  line-height:2.3em;
+  line-height:2.5em;
+}
+.schedule p {
+  height: 40px;
 }
 .time {
   display:inline-block;
@@ -328,37 +391,6 @@ h3 {
   height:40px;
 }
 
-/* DAYOF */
-.keynote {
-  max-width:1000px;
-  margin: 0 auto;
-  padding:20px;
-  display:flex;
-  justify-content:center;
-  vertical-align: center;
-  flex-wrap: wrap;
-}
-.keynote-card {
-  margin: 10px;
-  max-width: 400px;
-}
-.keynote-photo {
-  -webkit-filter: grayscale(1) brightness(1.2);
-  height:220px;
-}
-.keynote-photo:hover {
-  -webkit-filter: none;
-}
-.keynote-text {
-  max-width: 600px;
-  padding-left: 30px;
-  text-align:left;
-}
-.keynote-text p {
-  font-size:1.3em;
-  font-style: italic;
-  margin-bottom:10px;
-}
 
 .tag {
   display:inline-block;
@@ -370,15 +402,17 @@ h3 {
   font-weight:bold;
   letter-spacing: 1px;
 }
+.tag.optional {
+  display:inline;
+  color: #FFBE00;
+  margin:0;
+  padding:0 10px 0 0;
+}
 .beginner {
   background-color: #2E7AD4;
 }
 .advanced {
   background-color: #D85465;
-}
-.soon {
-  margin-left:10px;
-  color:black;
 }
 
 .mentor-grid {
@@ -402,6 +436,17 @@ h3 {
 }
 .mentor-photo:hover {
   -webkit-filter: none;
+}
+
+.icon {
+  width:100%;
+
+}
+.icon > img {
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+  height:100px;
 }
 
 
