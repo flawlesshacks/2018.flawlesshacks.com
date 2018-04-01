@@ -526,6 +526,11 @@ h3 {
   #workshops h1 {
     margin-bottom:0;
   }
+
+  .speaker .content h3 span {
+    padding:0px;
+    background-color:none;
+  }
 }
 
 }
