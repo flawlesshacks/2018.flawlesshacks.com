@@ -506,6 +506,10 @@ h3 {
     margin:0 auto;
     padding:20px 10px 0px;
   }
+  .speaker {
+    align-items:center; 
+    min-width: 300px
+  }
 }
 
 @media (max-width: 530px) {
@@ -526,10 +530,11 @@ h3 {
   #workshops h1 {
     margin-bottom:0;
   }
-
-  .speaker .content h3 span {
-    padding:0px;
-    background-color:none;
+    .speaker .content h3,
+    .speaker .content h3 span{
+      color: #FFBE00;
+      font-style: italic;
+    background-color:transparent;
   }
 }
 
