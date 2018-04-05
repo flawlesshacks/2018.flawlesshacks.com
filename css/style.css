@@ -171,8 +171,19 @@ h3 {
 .workshop {
   display:flex;
 }
+.workshop a {
+  color: #2E7AD4
+}
+.workshop a:hover {
+  color: #1BB996;
+}
 .workshop .content {
   margin: 20px;
+}
+.workshop .prework {
+  margin:10px 0;
+  padding:10px;
+  background-color: rgba(255,255,255,0.6);
 }
 .workshop h3 i {
   font-size:.7em;
@@ -530,10 +541,10 @@ h3 {
   #workshops h1 {
     margin-bottom:0;
   }
-    .speaker .content h3,
-    .speaker .content h3 span{
-      color: #FFBE00;
-      font-style: italic;
+  .speaker .content h3,
+  .speaker .content h3 span{
+    color: #FFBE00;
+    font-style: italic;
     background-color:transparent;
   }
 }
